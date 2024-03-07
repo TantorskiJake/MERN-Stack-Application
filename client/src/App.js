@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { Auth } from "./pages/auth";
 import { CreateRecipe } from "./pages/create-recipe";
-import { SavedRecipe } from "./pages/saved-recipes";
+import { SavedRecipes } from "./pages/saved-recipes";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/create-recipe" element={<CreateRecipe />} />
-          <Route path="/saved-recipe" element={<SavedRecipe />} />
+          <Route path="/saved-recipe" element={<SavedRecipes />} />
         </Routes>
       </Router>
     </div>
