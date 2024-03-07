@@ -10,7 +10,7 @@ router.post("/register", async (req, res) => {
 
     const user = await UserModel.findOne({ username });
 
-    res.join(user);
+    res.json(user);
 });
 
 router.post("/login");
