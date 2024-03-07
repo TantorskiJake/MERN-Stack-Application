@@ -12,7 +12,7 @@ app.use(cors());
 app.use("/auth", userRouter); 
 
 mongoose.connect(
-    "mongodb+srv://jaketech:MERNpassword123@recipes.pfdwpew.mongodb.net/recipes?retryWrites=true&w=majority&appName=recipes"
+    "mongodb+srv://jaketech:MERNpassword123@recipes.pfdwpew.mongodb.net/recipes?retryWrites=true&w=majority&appName=recipes",
 );
 
 
