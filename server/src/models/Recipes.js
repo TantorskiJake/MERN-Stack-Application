@@ -1,10 +1,9 @@
 import mongoose from "mongoose";
 
-const RecipeSchema = new mongoose.Schema({
+const recipeSchema = mongoose.Schema({
   name: {
     type: String,
     required: true,
-    unique: true,
   },
   ingredients: [
     {
@@ -16,6 +15,7 @@ const RecipeSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+
   imageUrl: {
     type: String,
     required: true,
@@ -26,9 +26,9 @@ const RecipeSchema = new mongoose.Schema({
   },
   userOwner: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "users",
+    ref: "User",
     required: true,
   },
 });
 
-export const RecipeModel = mongoose.model("recipes", RecipeSchema);
+export const RecipesModel = mongoose.model("Recipes", recipeSchema);
